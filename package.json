@@ -1,0 +1,16 @@
+{
+  "name": "sqli_platform",
+  "version": "1.0.0",
+  "description": "Explore SQL injections",
+  "main": "srcs/index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "koa": "^2.6.2",
+    "koa-bodyparser": "^4.2.1",
+    "koa-favicon": "^2.0.1",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "mysql": "^2.16.0"
+  }
+}

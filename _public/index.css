@@ -1,0 +1,76 @@
+body {
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+
+body::-webkit-scrollbar { 
+  display: none; 
+}
+
+#title {
+  text-align: center;
+
+  font-weight: lighter;
+  font-size: 80;
+}
+
+#subtitle {
+  text-align: center;
+
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 30;
+
+  margin-bottom: 100px;
+}
+
+#request {
+  text-align: center;
+
+  font-size: 80;
+  font-weight: lighter;
+
+  display: block;
+  margin: auto;
+
+  width: 100%;
+  height: 100px;
+
+  border: none;
+  outline: none;
+
+  padding-bottom: 30px;
+}
+
+.result {
+  margin: auto;
+  padding: 20px;
+
+  margin-top: 60px;
+  padding-top: 5px;
+
+  display: block;
+
+  width: 40%;
+
+  border: 1px solid #aaa;
+  box-shadow: 0px 1px 2px 3px #ccc;
+}
+
+#no-results {
+  text-align: center;
+  font-size: 40;
+}
+
+code {
+  background: #eee;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+#sql-request {
+  padding-top: 50px;
+  font-size: 20;
+  font-weight: lighter;
+  text-align: center;
+}
