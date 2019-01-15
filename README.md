@@ -23,9 +23,9 @@ docker-compose up
 
 You way edit `docker-compose.yml` in order to tweak the following settings :
 
-- MYSQL_ROOT_PASSWORD `Databse password`
-- SQL_HOST=database `Database host, from the API point of view`
-- SQL_WAIT=20 `API waiting for that time (in seconds) before connecting to the database`
+- `MYSQL_ROOT_PASSWORD` Databse password
+- `SQL_HOST` Database host, from the API point of view
+- `SQL_WAIT` API waiting for that time (in seconds) before connecting to the database
 
 The application is then accessible on [http://localhost:8080/](http://localhost:8080/).
 
