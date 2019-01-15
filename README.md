@@ -1,11 +1,11 @@
 # SQLi Platform
 
-This is a vulnerable WEB application in order to understand SQL injection
+This is a vulnerable WEB application in order to understand SQL injections
 basics.
 
 The front end exposes a field allowing the user to search a database
 and retrieve names, nicknames, mails... The user's inputs are not
-sanitized, allowing an attacker to inject SQL code and leaking passwords.
+sanitized, allowing an attacker to inject SQL code and leak passwords.
 
 SQL queries are logged on the backend and are also shown on the front,
 so that the attacker has a better understanding of what he is doing.
