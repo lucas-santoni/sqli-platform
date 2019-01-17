@@ -34,6 +34,7 @@ The application is then accessible on [http://localhost:8080/](http://localhost:
 
 <details>
 <summary> :warning: Contains spoilers !</summary>
+<br />
 Here is an example of a working payload, esposing all passwords in the table:<br /><br />
 
 
