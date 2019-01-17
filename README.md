@@ -33,8 +33,8 @@ The application is then accessible on [http://localhost:8080/](http://localhost:
 ## Exploit
 
 <details>
-<summary>Warning ! Contains spoilers !</summary>
-Here is an example of a working payload, esposing all passwords in the table:
+<summary> :warning: Contains spoilers !</summary>
+Here is an example of a working payload, esposing all passwords in the table:<br />
 
 
 ```sql
