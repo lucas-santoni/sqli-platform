@@ -18,7 +18,7 @@ class SqlDatabase {
 
   connectionGuard() {
     if (!this.isConnected_)
-      throw new Error("not connected");
+      throw new Error('not connected');
   }
 
   queryUNSAFE_(query) {
@@ -30,8 +30,8 @@ class SqlDatabase {
         if (e) return f(e);
 
         query = query
-          .replace(/(\r\n\t|\n|\r\t)/g, "")
-          .replace(/\s\s+/g, " ")
+          .replace(/(\r\n\t|\n|\r\t)/g, '')
+          .replace(/\s\s+/g, ' ')
           .trim();
         return s({ results, fields, query });
       });

@@ -7,13 +7,13 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=password
     ports:
-      - "3306:3306"
+      - "127.0.0.1:3306:3306"
 
   app:
     build:
       context: .
     ports:
-      - "8080:8080"
+      - "127.0.0.1:8080:8080"
     environment:
       - SQL_HOST=database
       - SQL_WAIT=20

@@ -9,10 +9,6 @@ const SqlDatabase = require('./SqlDatabase');
 const app = new Koa();
 const router = new KoaRouter();
 
-const allowedCORS = [
-  'http://localhost:8080'
-]
-
 const sleep = time => new Promise(s => {
   setTimeout(s, time);
 });
@@ -31,7 +27,7 @@ let sqlDatabase;
 })();
 
 router.get('/hello', ctx => {
-  ctx.body = 'Hello, world!\n'
+  ctx.body = 'Hello, world!\n';
 });
 
 router.get('/q/:nickname', async ctx => {
@@ -40,7 +36,8 @@ router.get('/q/:nickname', async ctx => {
   if (!nickname)
     return ctx.status = 400;
 
-  const { results, query } = await sqlDatabase.getUsersWithNicknameUNSAFE(nickname)
+  const { results, query } =
+    await sqlDatabase.getUsersWithNicknameUNSAFE(nickname);
 
   ctx.body = {
     results,

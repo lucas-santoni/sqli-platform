@@ -55,7 +55,8 @@ const main = () => {
 
     let { res, que, err } = {};
     try {
-      const r = await axios.get('http://localhost:8080/q/' + encodeURIComponent(q));
+      const r = await axios.get(
+        window.location.origin + '/q/' + encodeURIComponent(q));
       const { results, query } = r.data;
 
       res = results;
